@@ -1,0 +1,76 @@
+package game;
+
+import java.util.ArrayList;
+import java.util.Stack;
+
+public class Square{
+	
+	
+	private Stack<Piece> _square;
+	private Square _nextSquare;
+	private ArrayList<Square> _previousSquares = new ArrayList<Square>();
+	protected boolean _forwardSquare = true;
+	
+	/*
+	 *Create a new stack of type Piece which is the representation
+	 *of a square on the board.
+	 */
+	public Square(){
+		_square = new Stack<Piece>();
+	}
+	/*
+	 * Method adds a Player's Piece, passed in, to the top of
+	 * the square's stack
+	 */
+	public void addPiece(Piece piece){
+		_square.push(piece);
+	}
+	/*
+	 * Method removes the top Piece of the squares stack
+	 */
+	public Piece removePiece(){
+		return _square.pop();
+	}
+	/*
+	 * Method returns the piece on top of the squares stack
+	 */
+	public Piece getPiece(){
+		return _square.peek();	
+	}
+	/*
+	 * Method returns, as an integer, the size of the square's stack
+	 */
+	public int getHeight(){
+		return _square.size();
+	}
+	/*
+	 * Method is used to set what the next square on the board is.
+	 */
+	public void setNextSquare(Square square){
+		_nextSquare = square;
+	}
+	/*
+	 * Method returns what the next square on the board is.
+	 */
+	public Square getNextSquare(){
+		return _nextSquare;
+	}
+	/*
+	 * Method is used to set what the previous square was.
+	 */
+	public void addPreviousSquare(Square square){
+		_previousSquares.add(square);
+	}	
+	/*
+	 * Method returns what the previous square on the board is
+	 */
+	public ArrayList<Square> getPreviousSquares(){
+		return _previousSquares;
+	}
+	public void setIsForwardSquare(boolean yes){
+		_forwardSquare = yes;
+	}
+	public boolean isForwardSquare(){
+		return _forwardSquare;
+	}
+}

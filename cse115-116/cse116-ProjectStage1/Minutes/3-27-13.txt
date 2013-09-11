@@ -1,0 +1,22 @@
+﻿Attendees:
+1. Sean
+2. Matthew
+3. Zach
+
+
+Discussion:
+1. GUI- we were able to get the background image to overlay properly
+2. Game code- we have the square class done as a superclass and are extending it to make the special square. 
+   We also have the player and piece finished, and are started on the main class.
+3. JUnit test is underway and will be continued
+
+
+For Next-Time:
+1. Matthew-is going to continue working on the GUI
+2. Sean-is going to continue working on the Game code
+3. Zach-is going to continue working on the JUnit test
+4. Todd-is going to work on commenting methods and writing game instructions
+
+
+Next Meeting:
+1. Friday 3/29/13

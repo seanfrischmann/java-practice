@@ -1,0 +1,171 @@
+CSE116 Spring 2013
+Homework #1 - Practice exercises
+
+***************************************************************************
+You may work as much as you want during the week, with whatever source of
+assistance you like.
+
+You will be required to write up a solution to a SIMILAR problem in recitation
+next week, starting with an EMPTY WORKSPACE.  In other words, you must
+understand the solution well enough that you can write the solution code
+without any external assistance.  You will not be permitted to consult any
+notes while you write up your solution in recitation next week.
+***************************************************************************
+
+This homework involves basic String manipulations.
+
+Several practice exercises are described below.  While I recommend you complete
+ALL of these exercises before doing your write-up in recitation next week, it
+is up to you to prepare yourself.
+
+The pedagogical goals of this homework are for you to:
+ 1) experience writing code to pass a suite of unit tests,
+ 2) practice defining a class in a named package
+ 3) practice defining non-void parameterized methods
+ 4) practice writing simple loops,
+ 5) perform some character-by-character String manipulations, and
+ 6) reinforce your individual code-writing skills.
+
+Your task is to define a class with methods so that their functionality matches
+what is described in the comments below.  Name your class "Homework1Practice".  
+Put your class in a package named 'code' in the 'src' folder.  Name your methods 
+as indicated in the comments below; define them as public instance (non-static)
+methods.
+
+The functionality of your definitions will be verified by JUnit tests.
+
+You may work as much as you want during the week.  You will be required to write
+up a solution to a SIMILAR problem in recitation next week, starting with an
+EMPTY WORKSPACE.  In other words, you must understand the solution well enough
+that you can write the solution code without any external assistance.
+You will not be permitted to consult any notes while you write up your solution
+in recitation next week.
+
+A description of method #1:
+
+	/**
+	 * Name your method "count_e"
+	 *
+	 * @param s is the original String
+	 * @return the number of occurrences of the character 'e' in s 
+	 * 
+	 * Define this method so that it returns, as an int, the number of times
+     * the char 'e' occurs in the String s.
+	 * 
+	 * Keeping in mind that the String s can be *any* valid Java String, here 
+	 * are some examples:
+	 * 
+	 * if s is "", then the answer is 0 (zero)
+	 * if s is "abcdefg", then the answer is 1
+	 * if s is "farfalle", then the answer is 1
+	 * 
+	 * The only methods you may call on the String s are charAt(int) and length().
+	 */
+
+
+A description of method #2:
+
+	/**
+	 * Name your method "count_f"
+	 *
+	 * @param s is the original String
+	 * @return the number of occurrences of the character 'f' in s 
+	 * 
+	 * Define this method so that it returns, as an int, the number of times
+     * the char 'f' occurs in the String s.
+	 * 
+	 * Keeping in mind that the String s can be *any* valid Java String, here 
+	 * are some examples:
+	 * 
+	 * if s is "", then the answer is 0 (zero)
+	 * if s is "abcdefg", then the answer is 1
+	 * if s is "farfalle", then the answer is 2
+	 * 
+	 * The only methods you may call on the String s are charAt(int) and length().
+	 */
+
+
+A description of method #3:
+
+	/**
+	 * Name your method "count_one_char"
+	 *
+	 * @param s is the original String (1st parameter)
+	 * @param c is the char whose count in s we want to determine (2nd parameter)
+	 * @return the number of occurrences of c in s 
+	 * 
+	 * Define this method so that it returns, as an int, the number of times
+     * the char c occurs in the String s.
+	 * 
+	 * Keeping in mind that the String s can be *any* valid Java String, here 
+	 * are some examples:
+	 * 
+	 * if s is "", then no matter what c is the answer is 0 (zero)
+	 * 
+	 * if s is "abcdefg", and c is 'f', then the answer is 1
+	 * if s is "farfalle", and c is 'f', then the answer is 2
+	 * 
+	 * if s is "abcdefg", and c is 'e', then the answer is 1
+	 * if s is "farfalle", and c is 'e', then the answer is 1
+	 * 
+	 * if s is "abcdefg", and c is 'z', then the answer is 0
+	 * if s is "farfalle", and c is 'z', then the answer is 0
+	 * 
+	 * The only methods you may call on the String s are charAt(int) and length().
+	 */
+
+
+A description of method #4:
+
+	/**
+	 * Name your method "count_two_chars"
+	 *
+	 * @param s is the original String (1st parameter)
+	 * @param c is the first char char whose count in s we want to determine (2nd parameter)
+	 * @param d is the second char whose count in s we want to determine (3rd parameter)
+	 * @return the sum of the number of occurrences of c in s and the number of occurrences of d in s 
+	 * 
+	 * Define this method so that it returns, as an int, the number of times
+     * the char c occurs in the String s added to the number of times the char
+     * d occurs in String s.
+	 * 
+	 * Keeping in mind that the String s can be *any* valid Java String, here 
+	 * are some examples:
+	 * 
+	 * if s is "", then no matter what c and d are the answer is 0 (zero)
+	 * 
+	 * if s is "abcdefg", c is 'e' and d is 'f', then the answer is 2
+	 * if s is "farfalle", c is 'e' and d is 'f', then the answer is 3
+	 * 
+	 * if s is "abcdefg", c is 'a' and d is 'z', then the answer is 1
+	 * if s is "farfalle", c is 'a' and d is 'z', then the answer is 2
+	 * if s is "farfalle", c is 'q' and d is 'z', then the answer is 0
+	 * if s is "farfalle", c is 'f' and d is 'f', then the answer is 4
+	 * 
+	 * The only methods you may call on the String s are charAt(int) and length().
+	 */
+
+
+A description of method #5:
+
+	/**
+	 * Name your method "count_chars_in_String"
+	 *
+	 * @param s is the original String
+	 * @param characters is the String whose constituent character counts in s
+     *        we want to determine
+	 * @return the number of occurrences of the chars in characters in s 
+	 * 
+	 * Define this method so that it returns, as an int, the number of times
+     * any of the chars in the second String (characters) occur in the first
+     * String (s).
+	 * 
+	 * Some examples:
+	 * 
+	 * if s is "", then no matter what characters is the answer is 0 (zero)
+	 * if s is "abcdefg", and characters is "f", then the correct answer is 1
+	 * if s is "farfalle", and characters is "alf", then the correct answer is 6
+	 * if s is "farfalle", and characters is "ff", then the correct answer is 4
+	 * 
+	 * The only methods you may call on either String are charAt(int) and length().
+	 */

@@ -1,0 +1,25 @@
+<uml>
+   <greenVersion="20500"/>
+   <type>
+      <name="=CSE115TextbookProject/book-src<cse115.utilities{Random.java[Random"/>
+      <height="-1"/>
+      <width="-1"/>
+      <x="0"/>
+      <y="0"/>
+   </type>
+   <type>
+      <name="=CSE115TextbookProject/book-src<cse115.utilities{Timer.java[Timer"/>
+      <height="-1"/>
+      <width="-1"/>
+      <x="200"/>
+      <y="0"/>
+   </type>
+   <type>
+      <name="=CSE115TextbookProject/book-src<cse115.utilities{Vector.java[Vector"/>
+      <height="-1"/>
+      <width="-1"/>
+      <x="400"/>
+      <y="0"/>
+   </type>
+</uml>
+

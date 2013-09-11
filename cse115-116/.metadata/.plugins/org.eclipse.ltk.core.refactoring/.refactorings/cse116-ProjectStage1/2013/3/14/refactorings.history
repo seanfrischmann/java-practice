@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename local variable &apos;gameBoard&apos; in &apos;game.Board.Board(...)&apos; to &apos;_board&apos;&#x0A;- Original project: &apos;cse116-ProjectStage1&apos;&#x0A;- Original element: &apos;game.Board.Board(Player, Player).gameBoard&apos;&#x0A;- Renamed element: &apos;gameBoard&apos;&#x0A;- Update references to refactored element" description="Rename local variable &apos;gameBoard&apos;" id="org.eclipse.jdt.ui.rename.local.variable" input="/src&lt;game{Board.java[Board~Board~QPlayer;~QPlayer;@gameBoard!495!530!504!512!\[QSquare;!0!false" name="_board" references="true" stamp="1364769741007" version="1.0"/>
+</session>

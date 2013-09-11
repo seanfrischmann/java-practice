@@ -1,0 +1,116 @@
+package game;
+
+import java.awt.Color;
+
+
+
+public class Lotus {
+	
+		
+	private Player _player1;
+	private Player _player2;
+	private Player _currentPlayersTurn;
+	private Board _gameBoard;
+	private Player _winner;
+	
+	public Lotus(){
+		startGame();
+	}
+	
+	public void addPlayers(){
+		_player1 = new Player(Color.red);
+		_player2 = new Player(Color.blue);		
+	}
+	
+	public void startGame(){
+		addPlayers();
+		setCurrentPlayersTurn(_player1);
+		_gameBoard = new Board(_player1, _player2);		
+	}
+	
+	public void endGame(){
+		if(_gameBoard.getEndSquare().getPlayersEndStack(_player1) == 12){
+			setWinner(_player1);				
+		}
+		else if(_gameBoard.getEndSquare().getPlayersEndStack(_player2) == 12){
+			setWinner(_player2);			
+		}		
+	}
+	
+	public boolean canMovePiece(Piece piece){
+		if(piece.getPlayer() == _currentPlayersTurn){
+			return true;
+		}
+		Square[] squaresOnBoard = _gameBoard.getSquareArray();
+		boolean hasPiece = false;
+		for(int i = 0; i < squaresOnBoard.length; i++){
+			if(squaresOnBoard[i].getPiece().getPlayer() == _currentPlayersTurn){
+				hasPiece = true;
+			}			
+		}
+		if(_gameBoard.getStartArea().hasPiece(_currentPlayersTurn)){
+			hasPiece = true;
+		}
+		return !hasPiece;		
+				
+	}
+	
+	public boolean movePiece(Square startSquare, Square endSquare){
+		
+		if(canMovePiece(startSquare.getPiece())){
+			Square temp = startSquare;
+			boolean found = false;
+			for(int i = 0; i < startSquare.getHeight(); i++){
+				if(temp == endSquare){
+					found = true;
+					break;
+				}
+				if(startSquare.isForwardSquare()){
+					temp = temp.getNextSquare();
+				}
+				else{
+					/*temp = temp.getPreviousSquares();*/
+				}
+								
+			}
+			if(found){
+				Piece piece = startSquare.removePiece();
+				piece.setLastSquare(startSquare);
+				endSquare.addPiece(piece);
+			}
+			else{
+				return false;
+			}
+		}
+		else{
+			return false;
+		}	
+		endGame();
+		if(getWinner() == null){
+			if(getCurrentPlayersTurn() == _player1){
+				setCurrentPlayersTurn(_player2);
+			}
+			else{
+				setCurrentPlayersTurn(_player1);
+			}	
+		}
+		return true;
+	}	
+	
+	public Player getCurrentPlayersTurn() {
+		return _currentPlayersTurn;
+	}
+
+	public void setCurrentPlayersTurn(Player player) {
+		_currentPlayersTurn = player;
+	}
+
+	public Player getWinner() {
+		return _winner;
+	}
+
+	public void setWinner(Player winner) {
+		_winner = winner;
+	}
+
+}

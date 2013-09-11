@@ -1,0 +1,262 @@
+[
+  {
+    "symbolicName": "log4j",
+    "version": {
+      "major": 1,
+      "minor": 2,
+      "micro": 16,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "0da5888c68288bc6d313431711f0e91b0c13b09e",
+    "jarFileModificationDate": "2013-04-08T09:32:35-04:00",
+    "location": "/home/sean/workspace/SP13-CSE116-Stage2/lib/finch.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.hamcrest.core",
+    "version": {
+      "major": 1,
+      "minor": 1,
+      "micro": 0,
+      "qualifier": "v20090501071000"
+    },
+    "jarFileFingerprint": "254c9660266e1177c94b1a9ba05f6f757e7fb85a",
+    "jarFileModificationDate": "2012-06-14T13:43:23-04:00",
+    "location": "/usr/lib/eclipse/plugins/org.hamcrest.core_1.1.0.v20090501071000.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "f8e95c2636aa552701b0ea2595954ccfc7d11deb",
+    "jarFileModificationDate": "2013-04-22T18:40:36-04:00",
+    "location": "/usr/lib/jvm/java-7-openjdk-common/jre/lib/ext/sunjce_provider.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "log4j",
+    "version": {
+      "major": 1,
+      "minor": 2,
+      "micro": 16,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "0da5888c68288bc6d313431711f0e91b0c13b09e",
+    "jarFileModificationDate": "2013-04-04T14:19:43-04:00",
+    "location": "/home/sean/workspace/cse116-ProjectStage1/finch.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "b9bf0ccfbb084fa531ea0d7a1476a579d71eaa8e",
+    "jarFileModificationDate": "2013-04-22T18:39:17-04:00",
+    "location": "/usr/lib/jvm/java-7-openjdk-common/jre/lib/ext/localedata.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "f7bcfda2e5909d121d9d6b5243d87ea0fe6b2e77",
+    "jarFileModificationDate": "2013-04-22T18:41:07-04:00",
+    "location": "/usr/lib/jvm/java-7-openjdk-common/jre/lib/ext/zipfs.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "junit",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "f7cf82c2c188e805e53a5525e2c1e055237770c6",
+    "jarFileModificationDate": "2012-04-28T19:20:00-04:00",
+    "location": "/usr/lib/eclipse/plugins/org.junit_4.10.0.v4_10_0_v20120426-0900/junit.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "91f90b38a8f9ce369651138a1cf209343fd25b74",
+    "jarFileModificationDate": "2013-04-22T18:29:21-04:00",
+    "location": "/usr/lib/jvm/java-7-openjdk-common/jre/lib/ext/pulse-java.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "9db040171b3171bd5fb0793ccd595feea9d1d079",
+    "jarFileModificationDate": "2013-04-22T18:45:14-04:00",
+    "location": "/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/rhino.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "f317c1b846ab01a1c00d849881778a47a7e728bf",
+    "jarFileModificationDate": "2012-09-20T05:21:42-04:00",
+    "location": "/usr/share/java/java-atk-wrapper.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "3dda99e6f0e00e069f5926e92f5dd110b1b94432",
+    "jarFileModificationDate": "2013-04-22T18:45:14-04:00",
+    "location": "/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/resources.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "f80aac8c4ac70ecd78455d08e34f885112165ba8",
+    "jarFileModificationDate": "2013-04-22T18:35:27-04:00",
+    "location": "/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/rt.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "df2e6add652f20dfdabbe2c4196ad8db1d6bfa62",
+    "jarFileModificationDate": "2013-04-22T18:45:14-04:00",
+    "location": "/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/jsse.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "405ccf117b7d21327f882d734df0330552390553",
+    "jarFileModificationDate": "2013-04-22T18:39:14-04:00",
+    "location": "/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/charsets.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "jnaerator-0.9.5",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "a50592aa46cc972471a1d50117a8adc067d149cc",
+    "jarFileModificationDate": "2013-04-08T11:25:50-04:00",
+    "location": "/home/sean/workspace/cse116-ProjectStage2/lib/jnaerator-0.9.5.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "jnaerator-0.9.5",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "a50592aa46cc972471a1d50117a8adc067d149cc",
+    "jarFileModificationDate": "2013-04-08T09:32:34-04:00",
+    "location": "/home/sean/workspace/SP13-CSE116-Stage2/lib/jnaerator-0.9.5.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "b63fe2914018cd0f9d94318810b3459cf13519c2",
+    "jarFileModificationDate": "2013-04-22T18:38:48-04:00",
+    "location": "/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/jce.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "645db2bd6bbdfe39bef763c5c29bd6ed60d294ee",
+    "jarFileModificationDate": "2013-04-22T18:39:07-04:00",
+    "location": "/usr/lib/jvm/java-7-openjdk-common/jre/lib/ext/dnsns.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "1aaecebfd0d64a4d138efa11159368c0f465289f",
+    "jarFileModificationDate": "2013-04-22T18:38:59-04:00",
+    "location": "/usr/lib/jvm/java-7-openjdk-common/jre/lib/ext/sunpkcs11.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "log4j",
+    "version": {
+      "major": 1,
+      "minor": 2,
+      "micro": 16,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "0da5888c68288bc6d313431711f0e91b0c13b09e",
+    "jarFileModificationDate": "2013-04-08T11:25:50-04:00",
+    "location": "/home/sean/workspace/cse116-ProjectStage2/lib/finch.jar",
+    "javaRuntime": false
+  }
+]

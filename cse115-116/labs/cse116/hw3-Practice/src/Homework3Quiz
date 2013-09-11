@@ -1,0 +1,39 @@
+package code;
+
+import java.util.HashMap;
+
+import util.general.CharacterFromFileReader;
+
+public class Homework3 {
+	
+	public HashMap<String, String> count(String inputPath){
+		HashMap<String, String> map = new HashMap<String, String>();
+		CharacterFromFileReader cffr = new CharacterFromFileReader(inputPath);
+		String name = "";
+		String holder = "";
+		String number = "";
+		while (cffr.hasNext()){
+			char c = cffr.next();
+			if (c == '\n'){
+				number = holder;
+				addToMap(map, word, value);
+				name = ""; //Don't need this
+				number = ""; //Don't need this
+				holder = ""; 
+			}
+			else if (c == ':'){
+				name = holder;
+				holder = "";
+			}
+			else {
+				holder = holder + c;				
+			}
+		}
+		return map;
+	}
+	public void addToMap(HashMap<String, String> map, String word, String value){
+		if(word.length() > 0){
+			map.put(word,value);
+		}
+	}
+}

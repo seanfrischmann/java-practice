@@ -1,0 +1,20 @@
+﻿Attendees:
+1. Sean
+2. Matthew
+
+
+Discussion:
+1. Went over issues with GUI and how to read input stream
+2. Went over Board Class and how it is set up by generating random special squares and then filling in with regular squares. As well as the starting area.
+3. Talked about adding a finished area consisting of two stacks, one for player1 and one for player2
+4. Also went of main lotus class and how it will interface with the GUI
+
+
+For Next Time:
+1. GUI- Matthew is going to continue working on GUI and start setting up JButtons and shell for adding in the different spots on the board
+2. Game Code- Sean is going to continue to work on the different methods, hopefully finish the Board class and Lotus class
+3. Hopefully hear an update about JUnit test from Zach
+
+
+Next Meeting:
+1. Lab-Monday 4/1

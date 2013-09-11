@@ -1,0 +1,11 @@
+CSE115 - Fall 2012 - Lab 2
+
+Write your name here:Sean Frischmann
+
+Write your description and explanation from part B below the
+following line.
+------------------------------------------------------------
+It worked this way because...
+[i] When I first ran the program, the terrarium popped up with the creatures in it,however they weren't moving.
+[ii] When the stop() instructions were removed, and the program was called, the terrarium popped up with the creatures moving.
+[iii] This happened because when the program was called, all the instructions were run including the stop() which voided out the start instructions. When those were removed, the start() instructions remained active.

@@ -1,0 +1,124 @@
+package game;
+
+import java.awt.Color;
+import java.util.ArrayList;
+import java.util.Random;
+
+/**
+ * The point of the Board class is to act as a container for the 
+ * "game board". It generates squares needed for the board as well as
+ * generating the starting area and ending area.
+ */
+
+public class Board {
+	
+		
+	
+	private ArrayList<Integer> _used = new ArrayList<Integer>();
+	private Square[] _board;
+	private EndingSquare _end;
+	private StartingArea _start;
+	
+	public Board(Player player1, Player player2){
+		
+		randomNumber(3);
+		
+		_start = new StartingArea(player1, player2);
+		
+		_board = new Square[17];
+		for(int i = 0; i < _board.length; i++){
+			_board[i] = createSquare(i);
+		}
+		_end = new EndingSquare();
+		_board[0].setNextSquare(_board[1]);
+		_board[1].setNextSquare(_board[2]);
+		_board[2].setNextSquare(_board[3]);
+		_board[4].setNextSquare(_board[5]);
+		_board[5].setNextSquare(_board[6]);
+		_board[6].setNextSquare(_board[3]);
+		_board[3].setNextSquare(_board[7]);
+		for(int i = 7; i < (_board.length - 1); i++){
+			_board[i].setNextSquare(_board[i+1]);
+		}
+		_board[16].setNextSquare(_end);
+		_board[2].addPreviousSquare(_board[1]);
+		_board[1].addPreviousSquare(_board[0]);
+		_board[6].addPreviousSquare(_board[5]);
+		_board[5].addPreviousSquare(_board[4]);
+		_board[3].addPreviousSquare(_board[2]);
+		_board[3].addPreviousSquare(_board[6]);
+		_board[7].addPreviousSquare(_board[3]);
+		for(int i = 8; i < _board.length - 1; i++){
+			_board[i].addPreviousSquare(_board[i-1]);
+		}
+		
+	}
+	/**
+	 * Method generates a random number and stores it in 
+	 * an ArrayList after checking if it already exists
+	 */
+	public void randomNumber(int numbers){
+		Random _rand = new Random();
+		for(int i = 0; i < numbers; i++){
+			boolean failTest = true;
+			while(failTest){
+				int test = _rand.nextInt(16);
+				if(!_used.contains(test)){
+					_used.add(test);				
+					failTest = false;
+				}
+			}
+		}						
+	}
+	/**
+	 * This method generates new squares for the board.
+	 * It first checks to see if the passed in integer matches
+	 * the random number stored in the _used ArrayList, depending
+	 * on which position in the array, assigns one of the special
+	 * squares. If it is not one of the random numbers, it creates
+	 * a normal square.
+	 * @param integer
+	 * @return square
+	 */
+	public Square createSquare(int i){
+		
+		if(_used.get(0) == i){
+			return new SpecialSquare(1);
+		}
+		else if(_used.get(1) == i){
+			return new SpecialSquare(2);
+		}
+		else if(_used.get(2) == i){
+			return new BackwardsSquare();
+		}
+		else{
+			return new Square();
+		}
+	}
+	public Square[] getSquareArray(){
+		return _board;
+	}
+	public Square getStartSquareLeft(){
+		return _board[0];
+	}
+	public Square getStartSquareRight(){
+		return _board[4];
+	}
+	public Square getVSquare(){
+		return _board[3];
+	}
+	public EndingSquare getEndSquare(){
+		return _end;
+	}
+	public StartingArea getStartArea(){
+		return _start;
+	}
+public static void main(String[] args) {
+	Player p = new Player(Color.red);
+	Board game = new Board(p, new Player(Color.black));
+	Square[] temp = game.getSquareArray();
+	temp[6].addPiece(new Piece(p));
+	System.out.println(game.getVSquare().getPreviousSquares().get(0).getHeight());
+	System.out.println(game.getVSquare().getPreviousSquares().get(1).getHeight());
+}
+}

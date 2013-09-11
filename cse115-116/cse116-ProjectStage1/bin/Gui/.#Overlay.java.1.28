@@ -1,0 +1,524 @@
+package Gui;
+
+import game.Lotus;
+import game.Piece;
+import game.Square;
+import java.awt.Color;
+import java.awt.Dimension;
+import java.awt.GridLayout;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.util.Stack;
+import javax.swing.JButton;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+
+public class Overlay extends JPanel{
+	
+	private Dimension d;
+	private boolean _startingAreaMove = false;
+	private boolean buttonPressed = true;
+	private Square _startSquare;
+	private Square _endSquare;
+	private Stack<Piece> _startStack;
+	private Lotus _lotus;
+	
+	private JButton _js1;
+	private JButton _js2;
+	private JButton _js3;
+	private JButton _js4;
+	private JButton _js5;
+	private JButton _js6;
+	private JButton _js7;
+	private JButton _js8;
+	private JButton _j1;
+	private JButton _j2;
+	private JButton _j3;
+	private JButton _j4;
+	private JButton _j5;
+	private JLabel _j6;
+	private JButton _j7;
+	private JPanel _j8;
+	private JButton _j9;
+	private JLabel _j10;
+	private JButton _j11;
+	private JButton _j12;
+	private JPanel _j13;
+	private JButton _j14;
+	private JButton _j15;
+	private JButton _j16;
+	private JButton _j17;
+	private JButton _j18;
+	private JButton _j19;
+	private JButton _j20;
+	private JButton _j21;
+	private JButton _j22;
+	private JButton _j23;
+	private JButton _j24;
+	private JButton _j25;
+	
+	
+	public Overlay(){
+		_lotus = new Lotus();
+		
+		d = new Dimension(700,700);
+		this.setOpaque(false);
+		this.setLayout(new GridLayout(5,5,30,30));
+		this.setMaximumSize(d);
+		this.setMinimumSize(d);
+		this.setPreferredSize(d);
+		this.setSize(d);
+		
+		
+	/* 		Testing position of elements in GridLayout
+			JButtons now are added in correct order and resize properly
+	*/	
+
+		_js1 = new JButton();
+		_js1.setBackground(Color.RED);
+		_js1.setOpaque(true);
+		ActionListener startButton1 = new StartMoveListener(this,  _lotus.getBoard().getStartArea().getOneStackPlayer1());
+		_js1.addActionListener(startButton1);
+		
+		_js2 = new JButton();
+		_js2.setBackground(Color.RED);
+		_js2.setOpaque(true);
+		
+		_js3 = new JButton(Integer.toString(_lotus.getBoard().getStartArea().getThreeStackPlayer1().size()));
+		_js3.setBackground(Color.RED);
+		_js3.setOpaque(true);
+		
+		_js4 = new JButton(Integer.toString(_lotus.getBoard().getStartArea().getFourStackPlayer1().size()));
+		_js4.setBackground(Color.RED);
+		_js4.setOpaque(true);
+		
+		_js5 = new JButton(Integer.toString(_lotus.getBoard().getStartArea().getOneStackPlayer2().size()));
+		_js5.setBackground(Color.BLUE);
+		_js5.setOpaque(true);
+		
+		_js6 = new JButton(Integer.toString(_lotus.getBoard().getStartArea().getTwoStackPlayer2().size()));
+		_js6.setBackground(Color.BLUE);
+		_js6.setOpaque(true);
+		
+		_js7 = new JButton(Integer.toString(_lotus.getBoard().getStartArea().getThreeStackPlayer2().size()));
+		_js7.setBackground(Color.BLUE);
+		_js7.setOpaque(true);
+		
+		_js8 = new JButton(Integer.toString(_lotus.getBoard().getStartArea().getFourStackPlayer2().size()));
+		_js8.setBackground(Color.BLUE);
+		_js8.setOpaque(true);
+		
+		Square[] squarray = _lotus.getBoard().getSquareArray();
+		Square squ0 = squarray[0];
+		Square squ1 = squarray[1];
+		Square squ2 = squarray[2];
+		Square squ3 = squarray[3];
+		Square squ4 = squarray[4];
+		Square squ5 = squarray[5];
+		Square squ6 = squarray[6];
+		Square squ7 = squarray[7];
+		Square squ8 = squarray[8];
+		Square squ9 = squarray[9];
+		Square squ10 = squarray[10];
+		Square squ11 = squarray[11];
+		Square squ12 = squarray[12];
+		Square squ13 = squarray[13];
+		Square squ14 = squarray[14];
+		Square squ15 = squarray[15];
+		Square squ16 = squarray[16];
+		
+		_j1 = new JButton(Integer.toString(squ10.getStackSize()));
+		if (_lotus.getBoard().getBackwardsSquare() == squ10){
+			_j1.setText(Integer.toString(squ10.getStackSize()) + " - ");
+		}
+		else if (_lotus.getBoard().getSpecialSquare1() == squ10){
+			_j1.setText(Integer.toString(squ10.getStackSize()) + " + 1");
+		}
+		else if (_lotus.getBoard().getSpecialSquare2() == squ10){
+			_j1.setText(Integer.toString(squ10.getStackSize()) + " + 2");
+		}
+		if (squ10.getStackSize() == 0){
+			_j1.setBackground(Color.WHITE);
+		}
+		else{
+			_j1.setBackground(squ10.getPiece().getPlayer().getColor());
+		}
+		add(_j1);
+		_j1.setOpaque(true);
+		_j2 = new JButton(Integer.toString(squ11.getStackSize()));
+		if (_lotus.getBoard().getBackwardsSquare() == squ11){
+			_j2.setText(Integer.toString(squ11.getStackSize()) + " - ");
+		}
+		else if (_lotus.getBoard().getSpecialSquare1() == squ11){
+			_j2.setText(Integer.toString(squ11.getStackSize()) + " + 1");
+		}
+		else if (_lotus.getBoard().getSpecialSquare2() == squ11){
+			_j2.setText(Integer.toString(squ11.getStackSize()) + " + 2");
+		}
+		if (squ11.getStackSize() == 0){
+			_j2.setBackground(Color.WHITE);
+		}
+		else{
+			_j2.setBackground(squ11.getPiece().getPlayer().getColor());
+		}
+		add(_j2);
+		_j2.setOpaque(true);
+		_j3 = new JButton(Integer.toString(squ12.getStackSize()));
+		if (_lotus.getBoard().getBackwardsSquare() == squ12){
+			_j3.setText(Integer.toString(squ12.getStackSize()) + " - ");
+		}
+		else if (_lotus.getBoard().getSpecialSquare1() == squ12){
+			_j3.setText(Integer.toString(squ12.getStackSize()) + " + 1");
+		}
+		else if (_lotus.getBoard().getSpecialSquare2() == squ12){
+			_j3.setText(Integer.toString(squ12.getStackSize()) + " + 2");
+		}
+		if (squ12.getStackSize() == 0){
+			_j3.setBackground(Color.WHITE);
+		}
+		else{
+			_j3.setBackground(squ12.getPiece().getPlayer().getColor());
+		}
+		add(_j3);
+		_j3.setOpaque(true);
+		_j4 = new JButton(Integer.toString(squ13.getStackSize()));
+		if (_lotus.getBoard().getBackwardsSquare() == squ13){
+			_j4.setText(Integer.toString(squ13.getStackSize()) + " - ");
+		}
+		else if (_lotus.getBoard().getSpecialSquare1() == squ13){
+			_j4.setText(Integer.toString(squ13.getStackSize()) + " + 1");
+		}
+		else if (_lotus.getBoard().getSpecialSquare2() == squ13){
+			_j4.setText(Integer.toString(squ13.getStackSize()) + " + 2");
+		}
+		if (squ13.getStackSize() == 0){
+			_j4.setBackground(Color.WHITE);
+		}
+		else{
+			_j4.setBackground(squ13.getPiece().getPlayer().getColor());
+		}
+		add(_j4);
+		_j4.setOpaque(true);
+		_j5 = new JButton(Integer.toString(squ14.getStackSize()));
+		if (_lotus.getBoard().getBackwardsSquare() == squ14){
+			_j5.setText(Integer.toString(squ14.getStackSize()) + " - ");
+		}
+		else if (_lotus.getBoard().getSpecialSquare1() == squ14){
+			_j5.setText(Integer.toString(squ14.getStackSize()) + " + 1");
+		}
+		else if (_lotus.getBoard().getSpecialSquare2() == squ14){
+			_j5.setText(Integer.toString(squ14.getStackSize()) + " + 2");
+		}
+		if (squ14.getStackSize() == 0){
+			_j5.setBackground(Color.WHITE);
+		}
+		else{
+			_j5.setBackground(squ14.getPiece().getPlayer().getColor());
+		}
+		add(_j5);
+		_j5.setOpaque(true);
+		 _j6 = new JLabel();
+		add(_j6);
+		_j6.setOpaque(false);
+		_j7 = new JButton(Integer.toString(squ0.getStackSize()));
+		if (_lotus.getBoard().getBackwardsSquare() == squ0){
+			_j7.setText(Integer.toString(squ0.getStackSize()) + " - ");
+		}
+		else if (_lotus.getBoard().getSpecialSquare1() == squ0){
+			_j7.setText(Integer.toString(squ0.getStackSize()) + " + 1");
+		}
+		else if (_lotus.getBoard().getSpecialSquare2() == squ0){
+			_j7.setText(Integer.toString(squ0.getStackSize()) + " + 2");
+		}
+		if (squ0.getStackSize() == 0){
+			_j7.setBackground(Color.WHITE);
+		}
+		else{
+			_j7.setBackground(squ0.getPiece().getPlayer().getColor());
+		}
+		add(_j7);
+		ActionListener square0 = new EndMoveListener(this,squ0);
+		_j7.addActionListener(square0);
+		
+		_j7.setOpaque(true);
+		_j8 = new JPanel();
+		_j8.setLayout(new GridLayout(0,2));
+		_j8.add(_js1);
+		_j8.add(_js2);
+		_j8.add(_js3);
+		_j8.add(_js4);
+		add(_j8);
+		_j8.setOpaque(false);
+		_j9 = new JButton(Integer.toString(squ4.getStackSize()));
+		if (_lotus.getBoard().getBackwardsSquare() == squ4){
+			_j9.setText(Integer.toString(squ4.getStackSize()) + " - ");
+		}
+		else if (_lotus.getBoard().getSpecialSquare1() == squ4){
+			_j9.setText(Integer.toString(squ4.getStackSize()) + " + 1");
+		}
+		else if (_lotus.getBoard().getSpecialSquare2() == squ4){
+			_j9.setText(Integer.toString(squ4.getStackSize()) + " + 2");
+		}
+		if (squ4.getStackSize() == 0){
+			_j9.setBackground(Color.WHITE);
+		}
+		else{
+			_j9.setBackground(squ4.getPiece().getPlayer().getColor());
+		}
+		add(_j9);
+		_j9.setOpaque(true);
+		_j10 = new JLabel();
+		add(_j10);
+		_j10.setOpaque(false);
+		_j11 = new JButton(Integer.toString(squ9.getStackSize()));
+		if (_lotus.getBoard().getBackwardsSquare() == squ9){
+			_j11.setText(Integer.toString(squ9.getStackSize()) + " - ");
+		}
+		else if (_lotus.getBoard().getSpecialSquare1() == squ9){
+			_j11.setText(Integer.toString(squ9.getStackSize()) + " + 1");
+		}
+		else if (_lotus.getBoard().getSpecialSquare2() == squ9){
+			_j11.setText(Integer.toString(squ9.getStackSize()) + " + 2");
+		}
+		if (squ9.getStackSize() == 0){
+			_j11.setBackground(Color.WHITE);
+		}
+		else{
+			_j11.setBackground(squ9.getPiece().getPlayer().getColor());
+		}
+		add(_j11);
+		_j11.setOpaque(true);
+		_j12 = new JButton(Integer.toString(squ1.getStackSize()));
+		if (_lotus.getBoard().getBackwardsSquare() == squ1){
+			_j12.setText(Integer.toString(squ1.getStackSize()) + " - ");
+		}
+		else if (_lotus.getBoard().getSpecialSquare1() == squ1){
+			_j12.setText(Integer.toString(squ1.getStackSize()) + " + 1");
+		}
+		else if (_lotus.getBoard().getSpecialSquare2() == squ1){
+			_j12.setText(Integer.toString(squ1.getStackSize()) + " + 2");
+		}
+		if (squ1.getStackSize() == 0){
+			_j12.setBackground(Color.WHITE);
+		}
+		else{
+			_j12.setBackground(squ1.getPiece().getPlayer().getColor());
+		}
+		add(_j12);
+		_j12.setOpaque(true);
+		_j13 = new JPanel();
+		_j13.setLayout(new GridLayout(0,2));
+		_j13.add(_js5);
+		_j13.add(_js6);
+		_j13.add(_js7);
+		_j13.add(_js8);
+		add(_j13);
+		_j13.setOpaque(false);
+		JButton j14 = new JButton(Integer.toString(squ5.getStackSize()));
+		if (_lotus.getBoard().getBackwardsSquare() == squ5){
+			j14.setText(Integer.toString(squ5.getStackSize()) + " - ");
+		}
+		else if (_lotus.getBoard().getSpecialSquare1() == squ5){
+			j14.setText(Integer.toString(squ5.getStackSize()) + " + 1");
+		}
+		else if (_lotus.getBoard().getSpecialSquare2() == squ5){
+			j14.setText(Integer.toString(squ5.getStackSize()) + " + 2");
+		}
+		if (squ5.getStackSize() == 0){
+			j14.setBackground(Color.WHITE);
+		}
+		else{
+			j14.setBackground(squ5.getPiece().getPlayer().getColor());
+		}
+		add(j14);
+		j14.setOpaque(true);
+		JButton j15 = new JButton(Integer.toString(squ15.getStackSize()));
+		if (_lotus.getBoard().getBackwardsSquare() == squ15){
+			j15.setText(Integer.toString(squ15.getStackSize()) + " - ");
+		}
+		else if (_lotus.getBoard().getSpecialSquare1() == squ15){
+			j15.setText(Integer.toString(squ15.getStackSize()) + " + 1");
+		}
+		else if (_lotus.getBoard().getSpecialSquare2() == squ15){
+			j15.setText(Integer.toString(squ15.getStackSize()) + " + 2");
+		}
+		if (squ15.getStackSize() == 0){
+			j15.setBackground(Color.WHITE);
+		}
+		else{
+			j15.setBackground(squ15.getPiece().getPlayer().getColor());
+		}
+		add(j15);
+		j15.setOpaque(true);
+		JLabel j16 = new JLabel();
+		add(j16);
+		j16.setOpaque(false);
+		JButton j17 = new JButton(Integer.toString(squ2.getStackSize()));
+		if (_lotus.getBoard().getBackwardsSquare() == squ2){
+			j17.setText(Integer.toString(squ2.getStackSize()) + " - ");
+		}
+		else if (_lotus.getBoard().getSpecialSquare1() == squ2){
+			j17.setText(Integer.toString(squ2.getStackSize()) + " + 1");
+		}
+		else if (_lotus.getBoard().getSpecialSquare2() == squ2){
+			j17.setText(Integer.toString(squ2.getStackSize()) + " + 2");
+		}
+		if (squ2.getStackSize() == 0){
+			j17.setBackground(Color.WHITE);
+		}
+		else{
+			j17.setBackground(squ2.getPiece().getPlayer().getColor());
+		}
+		add(j17);
+		j17.setOpaque(true);
+		JButton j18 = new JButton(Integer.toString(squ3.getStackSize()));
+		if (_lotus.getBoard().getBackwardsSquare() == squ3){
+			j18.setText(Integer.toString(squ3.getStackSize()) + " - ");
+		}
+		else if (_lotus.getBoard().getSpecialSquare1() == squ3){
+			j18.setText(Integer.toString(squ3.getStackSize()) + " + 1");
+		}
+		else if (_lotus.getBoard().getSpecialSquare2() == squ3){
+			j18.setText(Integer.toString(squ3.getStackSize()) + " + 2");
+		}
+		if (squ3.getStackSize() == 0){
+			j18.setBackground(Color.WHITE);
+		}
+		else{
+			j18.setBackground(squ3.getPiece().getPlayer().getColor());
+		}
+		add(j18);
+		j18.setOpaque(true);
+		JButton j19 = new JButton(Integer.toString(squ6.getStackSize()));
+		if (_lotus.getBoard().getBackwardsSquare() == squ6){
+			j19.setText(Integer.toString(squ6.getStackSize()) + " - ");
+		}
+		else if (_lotus.getBoard().getSpecialSquare1() == squ6){
+			j19.setText(Integer.toString(squ6.getStackSize()) + " + 1");
+		}
+		else if (_lotus.getBoard().getSpecialSquare2() == squ6){
+			j19.setText(Integer.toString(squ6.getStackSize()) + " + 2");
+		}
+		if (squ6.getStackSize() == 0){
+			j19.setBackground(Color.WHITE);
+		}
+		else{
+			j19.setBackground(squ6.getPiece().getPlayer().getColor());
+		}
+		add(j19);
+		j19.setOpaque(true);
+		JLabel j20 = new JLabel();
+		add(j20);
+		j20.setOpaque(false);
+		JButton j21 = new JButton(Integer.toString(squ8.getStackSize()));
+		if (_lotus.getBoard().getBackwardsSquare() == squ8){
+			j21.setText(Integer.toString(squ8.getStackSize()) + " - ");
+		}
+		else if (_lotus.getBoard().getSpecialSquare1() == squ8){
+			j21.setText(Integer.toString(squ8.getStackSize()) + " + 1");
+		}
+		else if (_lotus.getBoard().getSpecialSquare2() == squ8){
+			j21.setText(Integer.toString(squ8.getStackSize()) + " + 2");
+		}
+		if (squ8.getStackSize() == 0){
+			j21.setBackground(Color.WHITE);
+		}
+		else{
+			j21.setBackground(squ8.getPiece().getPlayer().getColor());
+		}
+		add(j21);
+		j21.setOpaque(true);
+		JLabel j22 = new JLabel();
+		add(j22);
+		j22.setOpaque(false);
+		JButton j23 = new JButton(Integer.toString(squ7.getStackSize()));
+		if (_lotus.getBoard().getBackwardsSquare() == squ7){
+			j23.setText(Integer.toString(squ7.getStackSize()) + " - ");
+		}
+		else if (_lotus.getBoard().getSpecialSquare1() == squ7){
+			j23.setText(Integer.toString(squ7.getStackSize()) + " + 1");
+		}
+		else if (_lotus.getBoard().getSpecialSquare2() == squ7){
+			j23.setText(Integer.toString(squ7.getStackSize()) + " + 2");
+		}
+		if (squ7.getStackSize() == 0){
+			j23.setBackground(Color.WHITE);
+		}
+		else{
+			j23.setBackground(squ7.getPiece().getPlayer().getColor());
+		}
+		add(j23);
+		j23.setOpaque(true);
+		JLabel j24 = new JLabel();
+		add(j24);
+		j24.setOpaque(false);
+		JButton j25 = new JButton(Integer.toString(squ16.getStackSize()));
+		if (_lotus.getBoard().getBackwardsSquare() == squ16){
+			j25.setText(Integer.toString(squ16.getStackSize()) + " - ");
+		}
+		else if (_lotus.getBoard().getSpecialSquare1() == squ16){
+			j25.setText(Integer.toString(squ16.getStackSize()) + " + 1");
+		}
+		else if (_lotus.getBoard().getSpecialSquare2() == squ16){
+			j25.setText(Integer.toString(squ16.getStackSize()) + " + 2");
+		}
+		if (squ16.getStackSize() == 0){
+			j25.setBackground(Color.WHITE);
+		}
+		else{
+			j25.setBackground(squ16.getPiece().getPlayer().getColor());
+		}
+		add(j25);
+		j25.setOpaque(true);
+		updateJButtons();
+	}
+	public void updateJButtons(){
+		_js1.setText(Integer.toString(_lotus.getBoard().getStartArea().getOneStackPlayer1().size()));
+	}
+	public class EndMoveListener implements ActionListener{
+		private Overlay _overlay;
+		private Square _passedSquare;
+		public EndMoveListener(Overlay overlay, Square square){
+			_overlay = overlay;
+			_passedSquare = square;					
+		}
+
+		@Override
+		public void actionPerformed(ActionEvent e) {
+			if(buttonPressed){
+				if(_startingAreaMove){
+					_startingAreaMove = false;
+				}
+				_startSquare = _passedSquare;
+				buttonPressed = false;
+				
+			}
+			else if((!buttonPressed)){
+				_endSquare = _passedSquare;
+				if()
+				_lotus.startingMove(_startSquare, _startStack, _endSquare);
+				updateJButtons();
+				buttonPressed = true;
+			}
+			/*else if((!buttonPressed)){
+				_lotus.movePiece(_startSquare, _endSquare);
+			}*/
+		}
+		
+	}
+	public class StartMoveListener implements ActionListener{		
+		private Overlay _overlay;
+		private Stack<Piece> _passedStack;
+		public StartMoveListener(Overlay overlay, Stack<Piece> stack){
+			_overlay = overlay;
+			_passedStack = stack;			
+			
+		}
+		@Override
+		public void actionPerformed(ActionEvent e) {
+			_startStack = _passedStack;
+			_startingAreaMove = true;								
+									
+		}		
+	}
+}

@@ -1,0 +1,22 @@
+﻿Attendees
+1. Matthew
+2. Sean
+3. Todd
+4. Zack
+
+
+Discussed
+1. UML Diagram
+2. Layout of the Board
+3. Using Stacks as squares and the configuration
+4. Assigned Duties
+
+
+For Next Time
+1. Matthew is working on the GUI
+2. Sean and Todd are working on game code specifically squares and player
+3. Zach is working on JUnit Test
+
+
+Next Meeting
+1. Wednesday at Noon, Capen Cafe

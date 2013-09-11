@@ -1,0 +1,21 @@
+Attendees
+1. Matthew
+2. Sean
+3. Anna
+
+
+Discussed
+1. Matthew worked on the GUI (number of buttons visible based on number of players,
+	layout of the board with addition of center track)
+2. Sean and Anna added center track, new starting areas for all players, assigned 
+	players and colors, and updated the populate and getBoard methods.
+3. Discussed efficiency of some written methods that we may need to change
+
+
+For Next Time
+1. Matthew and Audrey working on GUI
+2. Will add "special" spaces
+
+
+Next Meeting
+1. Friday at 11am in Capen

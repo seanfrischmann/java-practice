@@ -1,0 +1,21 @@
+Attendee’s
+1. Sean
+2. Matthew
+3. Zach
+
+
+Discussed
+1. Looked at a shell gui
+2. Idea- incorporate board game image into gui possibly as a JLabel
+
+3. Waiting for repository to share work
+
+
+For Next Time
+   1. Look through cse115 labs to familiarize with gui, specifically the one dealing with terrarium and creating circles and squares
+   2. Trying to incorporate image with JLabel
+   3. UML Diagram
+
+
+Meeting
+   1. 3/25- during recitation

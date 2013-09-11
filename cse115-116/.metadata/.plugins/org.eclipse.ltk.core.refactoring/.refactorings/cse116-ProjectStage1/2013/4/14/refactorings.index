@@ -1,0 +1,18 @@
+1364780613671	Encapsulate field '_winner'
+1364943269967	Rename local variable 'nextSquare'
+1364944148584	Rename local variable 'count'
+1364944597083	Rename method 'hasAvailableMove'
+1365041779001	Rename local variable 'startingStack'
+1365124078913	Rename local variable 'js1'
+1365126224010	Rename local variable 'squarray'
+1365126536135	Delete element
+1365129194136	Rename type 'StartMoveListener'
+1365129208452	Rename type 'EndMoveListener'
+1365142912489	Rename resource 'Lotus Manual.txt'
+1365198643512	Delete element
+1365199070931	Rename field 'r'
+1365199079131	Rename field 'l'
+1365199086005	Rename field 'finch'
+1365199092345	Rename field 'x'
+1365199096521	Rename field 'y'
+1365204359673	Move file

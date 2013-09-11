@@ -1,0 +1,62 @@
+package game;
+
+import java.awt.Color;
+
+
+
+public class Lotus {
+	
+		
+	private int _numberOfPlayers;
+	public static final int _maxPlayers = 2;
+	
+	public Lotus(){
+		
+	}
+	
+	public boolean addPlayer(Player name){
+		if(_numberOfPlayers < _maxPlayers){
+			if(_numberOfPlayers == 0){
+				name = new Player(Color.red);
+			}
+			else{
+				name = new Player(Color.blue);
+			}
+			return true;
+		}
+		else{
+			return false;
+		}
+	}
+	
+	public void removePlayer(){
+		if(_numberOfPlayers > 0){
+			
+		}
+		else{
+			
+		}
+	}
+	
+	public void startGame(){
+		
+	}
+	
+	public void endGame(){
+		
+	}
+	
+	public boolean canMovePiece(){
+		
+		return true;
+	}
+	
+	public void movePiece(){
+		
+	}
+	
+	public void nextPlayersTurn(){
+		
+	}
+
+}

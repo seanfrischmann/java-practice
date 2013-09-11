@@ -1,0 +1,22 @@
+package code;
+
+public class Homework2 {
+	//counts the number of vowels, consonants and non-alphabetic characters
+	public int[] charCounts(String s){
+		String input = s;
+		int[] array = new int[3];
+		for (int i = 0; i < input.length(); i++){
+			char c = input.charAt(i);
+			c = Character.toLowerCase(c);
+			if ('a' <= c && c <= 'z'){
+				if(c == 'a'||c=='e'||c=='i'||c=='o'||c=='u'){
+					array[0]++;
+				}
+				else{array[1]++;}
+			}
+			else{array[2]++;}
+		}
+		return array;
+	}
+
+}

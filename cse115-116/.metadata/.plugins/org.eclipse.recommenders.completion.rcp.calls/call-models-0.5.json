@@ -1,0 +1,17 @@
+{
+  "/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/rt.jar": {
+    "coordinate": "jre:jre:zip:call:1.0.0",
+    "location": "/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/rt.jar",
+    "status": "RESOLVED"
+  },
+  "/home/sean/workspace/cse116-ProjectStage1/src": {
+    "location": "/home/sean/workspace/cse116-ProjectStage1/src",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027/home/sean/workspace/cse116-ProjectStage1/src\u0027. Skipped."
+  },
+  "/home/sean/workspace/cse116-ProjectStage2/src": {
+    "location": "/home/sean/workspace/cse116-ProjectStage2/src",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027/home/sean/workspace/cse116-ProjectStage2/src\u0027. Skipped."
+  }
+}

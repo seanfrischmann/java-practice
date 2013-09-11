@@ -1,0 +1,109 @@
+CSE116 - Homework #2 - Practice exercises
+
+***************************************************************************
+You may work as much as you want during the week, with whatever source of
+assistance you like.
+
+You will be required to write up a solution to a SIMILAR problem in recitation
+next week, starting with an EMPTY WORKSPACE.  In other words, you must
+understand the solution well enough that you can write the solution code
+without any external assistance.  You will not be permitted to consult any
+notes while you write up your solution in recitation next week.
+***************************************************************************
+
+This homework involves some basic String and array manipulations.  After you have
+successfully completed this homework you will have an improved understanding of
+both Strings and arrays.
+
+The pedagogical goals of this homework are for you to:
+ 1) experience writing code to pass a suite of unit tests,
+ 2) practice defining a class in a named package
+ 3) practice defining non-void parameterized methods
+ 4) practice writing simple loops,
+ 5) perform index operations on Strings and arrays, and
+ 6) reinforce your individual code-writing skills.
+
+Your task is to define a class with methods so that their functionality matches
+what is described in the comments below.  Name your class "Homework2Practice".  
+Put your class in a package named 'code' in the 'src' folder.  Name your methods 
+as indicated in the comments below; define them as public instance (non-static)
+methods.
+
+The functionality of your definitions will be verified by JUnit tests.
+IMPORTANT: note that if the methods are simply stubbed out (just return true or
+false) then the all the tests for that method will fail.  You must provide a
+non-stub implementation in order for the tests to have a chance of passing.
+
+A description of method #1:
+
+	/**
+	 * Name your method "countAll"
+	 *
+	 * @param s is the original String (1st parameter)
+	 * @return an int[] of size 27, containing the character counts as indicated above. 
+	 * 
+	 * The count of the number of 'a' or 'A' characters must be in position 0 of the array,
+	 * the count of the number of 'b' or 'B' characters must be in position 1 of the array,
+	 * 
+	 * the count of the number of 'z' or 'Z' characters must be in position 25 of the array, and
+	 * the count of all other characters must be in position 26 of the array.
+	 * 
+	 * Some examples:
+	 * 
+	 * if s is "", then all entries in the array must be 0.
+	 * if s is "a", then all entries in the array must be 0 except for entry 0, which must be 1.
+	 * if s is "Baaa!", then all entries in the array must be 0 except for:
+	 *                 entry  0, which must be 3,
+	 *                 entry  1, which must be 1, and
+	 *                 entry 26, which must be 1.
+	 * 
+	 * The only methods you may call on the String s are charAt(int) and length().
+	 *
+	 * You may use the static toLowerCase method defined in the Character class,
+	 * which maps a char to its lower-case equivalent.  For example,
+	 *     Character.toLowerCase('a') returns 'a'
+	 *     Character.toLowerCase('A') returns 'A'
+	 *     Character.toLowerCase('%') returns '%'
+	 * 
+	 * You may, if you wish, define private helper method that you call from your
+	 * character counting method.
+	 * 
+	 */
+
+A description of method #2:
+
+	/**
+	 * Name your method "smallest"
+	 *
+	 * @param a, an array of int values, of length > 0
+	 * @return the smallest int from a 
+	 * 
+	 * Some examples:
+	 * 
+	 * if a is {12, 5, 15, 9, 10, 3, 14} then the smallest int is 3
+	 * if a is {4, 5, 15, 9, 10, 4, 14} then the smallest int is 4
+	 * 
+	 * You may, if you wish, define private helper method that you call from your
+	 * character counting method.
+	 * 
+	 */
+	 
+A description of method #3:
+
+	/**
+	 * Name your method "indexOfSmallest"
+	 *
+	 * @param a, an array of int values, of length > 0
+	 * @return the index of the smallest int from a; if there is more than 
+	 * one occurrence of the smallest value, return the first (smallest) index  
+	 * 
+	 * Some examples:
+	 * 
+	 * if a is {12, 5, 15, 9, 10, 3, 14} then the index of the smallest is 5
+	 * if a is {4, 5, 15, 9, 10, 4, 14} then the index of the smallest is 0
+	 * 
+	 * You may, if you wish, define private helper method that you call from your
+	 * character counting method.
+	 * 
+	 */
+	 

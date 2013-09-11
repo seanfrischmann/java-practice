@@ -1,0 +1,62 @@
+CSE116 HW3 - practice
+
+***************************************************************************
+You may work as much as you want during the week, with whatever source of
+assistance you like.
+
+You will be required to write up a solution to a SIMILAR problem in recitation
+next week, starting with an EMPTY WORKSPACE.  In other words, you must
+understand the solution well enough that you can write the solution code
+without any external assistance.  You will not be permitted to consult any
+notes while you write up your solution in recitation next week.
+***************************************************************************
+
+GENERAL INSTRUCTIONS:
+--------------------
+Your task is to define a class with one method, described below.
+
+Your class must be defined in a named package placed in the 'src' folder.
+You may NOT name the package 'tests' or 'util', but aside from that any
+valid Java package name is acceptable.
+
+You may choose any valid Java class name for your class.
+
+You may choose any valid Java method names for your methods.  Your methods may
+be either static or non-static, but if non-static your class must provide a 
+no-argument constructor (either the default constructor, or an explicit one).
+
+The functionality of your definitions will be verified by JUnit tests.
+IMPORTANT: note that if the methods are simply stubbed out (just return true or
+false) then the all the tests for that method will fail.  You must provide a
+non-stub implementation in order for the tests to have a chance of passing.
+
+HOMEWORK-SPECIFIC INSTRUCTIONS:
+------------------------------
+
+A description of the required (public) method:
+
+	/**************************************************************************
+	 * @param a String denoting the inputPath the path on the local filesystem
+	 *        to the input file
+	 * @returns a HashMap<String,Integer> containing the word->count mappings
+	 *
+	 * This method must read the contents of a file (identified by inputFilePath),
+	 * one char at a time, segment the input into words, and keep track of word
+	 * counts in a java.util.HashMap<String,Integer>. 
+	 * 
+	 * A word is defined as a contiguous sequence of characters that does not
+	 * contain word separator characters, where word separator characters are:
+	 * ' ' (space), '\t' (tab), '\n' (newline), ',' (comma) and '.' (period).
+     * 
+     * Think carefully about this definition, and how it applies to an initial
+     * character sequence not preceded by a word separator, and also a final 
+     * character sequence not followed by a word separator.
+	 *   
+	 * You must use only CharacterFromFileReader to read characters from the input
+	 * file.  Use it as an Iterator<Character>, keeping in mind the autoboxing &
+	 * unboxing feature of the Java language.
+	 * 
+	 * In order to keep your code readable, break your code into several methods.
+	 * Define meaningful private helper methods that you call from the required
+	 * public method.
+	 **************************************************************************/

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="PatchWizard">
+		<item value="706" key="DIALOG_WIDTH"/>
+		<item value="3" key="DIALOG_Y_ORIGIN"/>
+		<item value="450" key="DIALOG_X_ORIGIN"/>
+		<item value="720" key="DIALOG_HEIGHT"/>
+		<item value="1|Ubuntu|9.0|0|GTK|1|" key="DIALOG_FONT_NAME"/>
+	</section>
+	<section name="PreviewPatchPage">
+	</section>
+	<section name="org.eclipse.compare.internal.CompareDialog">
+		<item value="1506" key="DIALOG_WIDTH"/>
+		<item value="3" key="DIALOG_Y_ORIGIN"/>
+		<item value="774" key="DIALOG_HEIGHT"/>
+		<item value="50" key="DIALOG_X_ORIGIN"/>
+		<item value="1|Ubuntu|9.0|0|GTK|1|" key="DIALOG_FONT_NAME"/>
+	</section>
+</section>

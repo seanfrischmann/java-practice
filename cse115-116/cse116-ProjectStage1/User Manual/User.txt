@@ -1,0 +1,57 @@
+Lotus Manual
+
+	The object of the game Lotus is to move one's pieces off the board into the position called "End Space"
+	 before the other player. One player is given ten red game pieces while the other player gets ten 
+	 blue game pieces.
+	 
+	The pieces are stacked in the middle of the board as one stack of 4 pieces, one stack of 3 pieces, 
+	one stack of 2 pieces, and one stack of 1 piece. 
+	
+	Each player takes turns moving their pieces in an attempt to get to the exit space on the game board. 
+	A player can only move a piece that is on top of a stack or that is the only piece left in a stack. 
+	The height of the stack determines how far you can move your piece. Therefore; a piece in a stack of 
+	1 can only move 1 space forward. A player may decide which of the two starting positions to move their 
+	piece to, both positions lead to one exit position. After the game start there is no limit to how many 
+	pieces can be in a stack.
+
+	The board consists of 14 regular squares, two special squares, and one backwards square. The regular 
+	squares have a starting height of 0. This meaning that the regular rules will be in affect when on those 
+	squares. One of the two special squares has a beginning height of 1, and the other has a beginning height 
+	of 2. These beginning heights are added to the stack size of the pieces on top of the square. The backwards 
+	square makes the player move his pieces backwards instead of forwards. Unless the piece came from a square 
+	directly next to the backwards square, in which case the backwards square acts as a regular square.
+	
+How to Play
+
+	To start the game, please run the BasicBoard class
+
+	1.) The box to the bottom left display current players turn.
+	
+	2.) When Moving from the starting area, select which stack you want to move from.
+	
+	3.) Next select your starting square, either to the left or right.
+	
+	4.) After you select your starting square, select the square you want to move to.
+	
+	5.) If you are moving from a square, select the square you want to move from followed by the square you want to move to.
+	
+FinchController
+	
+	The finch controller is currently under BETA-Testing, to use this feature go into the BasicBoard.java class and remove the "//".
+	Let us know what you think, so we can evolve this feature!
+	
+	How to Use Finch
+	
+		Moving the pointer left: To move the mouse left, tilt the finch so the left wing (beak pointing away from you) is pointed to the ground.
+		
+		Moving the pointer right: To move the mouse right, tilt the finch so the right wing (beak pointing away from you) is pointed to the ground.
+		
+		Moving the pointer up: To move the mouse up, tilt the finch so the beak is pointing up.
+		
+		Moving the pointer down: To move the mouse down, tilt the finch so the beak is pointing down.
+		
+		To select your option: Shake the finch.
+		
+	While using the finch please avoid contact with your computer's mouse.
+	
+	

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CommitComments>	<CommitComment>Alrighty, we have backwards moving logic complete! Now pieces should move back to their original stack if need be. We also have logic complete for moving off the board, every piece moved off the board increment the pieces owner&apos;s score by 1. We also have added players turns, now you cannot move a piece unless that piece belongs to you or you have no other moves. After each move, players turn is set to the next players turn.</CommitComment>
+	<CommitComment>Changed the logic behind Random Number generating, now is more consistent with moving pieces</CommitComment>
+	<CommitComment>Added more instructions, fixed up the finchController
+</CommitComment>
+	<CommitComment>HoOrAy! Game Logic is done!!!</CommitComment>
+	<CommitComment>Added getBoard method</CommitComment>
+	<CommitComment>Had to do a few edits in order to make everything connect. Pretty much done with the game logic, except for movePiece method.....</CommitComment>
+	<CommitComment>Added to Board class, now generates special squares at random then generates the rest as normal squares</CommitComment>
+	<CommitComment>Added the StartingArea, which generates the stacks and pieces needed for each player</CommitComment>
+	<CommitComment>The biggest change in this commit is combining of the one and two stack classes to create a SpecialSquare class which passes in an int of how high the begining height is.</CommitComment>
+	<CommitComment>added Grid</CommitComment>
+</CommitComments>
